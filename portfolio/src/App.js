@@ -1,4 +1,5 @@
 import './App.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Header from './components/Header.js';
 import Education from './components/Education.js';
@@ -7,9 +8,10 @@ import Contact from './components/Contact';
 import AboutMe from './components/About_Me';
 
 function App() {
-  
+
   return (
     <div>
+      <AnchorLink href="#education"><button>Scroll to element</button></AnchorLink>
 
       <Header/>
       <body>
@@ -33,6 +35,8 @@ function App() {
       <footer>
         
       </footer>
+
+      {/* <div ref={ref}>Some content here</div> */}
     </div>
   );
 }
